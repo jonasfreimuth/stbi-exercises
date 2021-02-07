@@ -20,7 +20,6 @@ plot(stress, type = 'b', xlab = 'dimensions')
 
 mds <- cmdscale(dist_mat, k = 3)
 
-# the resulting plot is not what it should be and i don't know why
-scatter3D(mds[,1], mds[,2], mds[,3], pch = 16, col = 'black')
+lines3D(mds[,1], mds[,2], mds[,3], pch = 16)
 
 plotrgl()
